@@ -1,0 +1,36 @@
+{
+  "name": "heroes-sorting",
+  "version": "1.0.0",
+  "description": "Sorting heroes by health level with tests",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gala-knd/heroes-sorting.git"
+  },
+  "keywords": ["sorting", "jest", "testing"],
+  "author": "Gala-knd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gala-knd/heroes-sorting/issues"
+  },
+  "homepage": "https://github.com/Gala-knd/heroes-sorting#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "core-js": "^3.34.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["text", "lcov", "html"],
+    "collectCoverageFrom": ["src/**/*.js"]
+  }
+}
