@@ -9,12 +9,14 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-    - run: npm ci
+        cache: 'npm'
+    - run: npm install  # вместо npm ci
     - run: npm run lint
     - run: npm test
