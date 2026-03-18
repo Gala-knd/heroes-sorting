@@ -2,10 +2,11 @@
   "name": "heroes-sorting",
   "version": "1.0.0",
   "description": "Sorting heroes by health level with tests",
-  "main": "src/index.js",
+  "main": "src/sortHeroes.js",
   "scripts": {
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
     "@babel/cli": "^7.23.4",
     "@babel/core": "^7.23.5",
     "@babel/preset-env": "^7.23.5",
+    "eslint": "^9.0.0",
+    "globals": "^16.0.0",
     "jest": "^29.7.0"
   },
   "dependencies": {
